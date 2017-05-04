@@ -27,9 +27,8 @@ UIViewController, UITableViewDelegate, UITableViewDataSource {
         let context = (UIApplication.shared.delegate as!
             AppDelegate).persistentContainer.viewContext
         do {
-        
             games = try context.fetch(Game.fetchRequest())
-            print(games)
+            tableView.reloadData()
         }catch {
             
         }
@@ -42,8 +41,9 @@ UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath:
         IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        let game = games[IndexPath.row]
+        let game = games[indexPath.row]
         cell.textLabel?.text = game.title
+        cell.imageView?.image = UIImage(data: game.image as! Data)
         return cell
     }
 

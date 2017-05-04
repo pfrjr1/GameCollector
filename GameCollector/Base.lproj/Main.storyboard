@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,13 +29,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="eQi-Gq-FGL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="K5r-UJ-ij0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eQi-Gq-FGL" secondAttribute="trailing" id="Mbu-rM-3E1"/>
-                            <constraint firstItem="eQi-Gq-FGL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RWo-mS-4hZ"/>
-                            <constraint firstAttribute="trailing" secondItem="eQi-Gq-FGL" secondAttribute="trailing" id="Rjj-ew-zJQ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eQi-Gq-FGL" secondAttribute="bottom" id="act-ay-cP1"/>
-                            <constraint firstItem="eQi-Gq-FGL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dkZ-oT-cTB"/>
-                            <constraint firstItem="eQi-Gq-FGL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="meo-Bx-MJe"/>
+                            <constraint firstItem="eQi-Gq-FGL" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="0c2-HG-7xp"/>
+                            <constraint firstItem="eQi-Gq-FGL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NIP-ng-Ghd"/>
+                            <constraint firstItem="eQi-Gq-FGL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vlk-KX-Jba"/>
+                            <constraint firstAttribute="trailing" secondItem="eQi-Gq-FGL" secondAttribute="trailing" id="fVA-Fv-rZv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sMV-cb-Eki">
