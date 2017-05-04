@@ -87,6 +87,7 @@
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="addTapped:" destination="XWd-ea-AwL" eventType="touchUpInside" id="mMq-15-vUk"/>
+                                    <action selector="deleteTapped:" destination="XWd-ea-AwL" eventType="touchUpInside" id="Hff-yp-d5X"/>
                                 </connections>
                             </button>
                         </subviews>
