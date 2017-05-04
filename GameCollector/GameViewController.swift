@@ -10,15 +10,27 @@ import UIKit
 
 class GameViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var deletebutton: UIButton!
+    @IBOutlet weak var addupdatebutton: UIButton!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var gameImageView: UIImageView!
     
     var imagePicker = UIImagePickerController()
+    var game : Game? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         imagePicker.delegate = self
+        
+        if game != nil {
+            gameImageView.image = UIImage(data: game!.image as! Data)
+            titleTextField.text = game!.title
+            
+            addupdatebutton.setTitle("Update", for: .normal)
+        }else{
+            deletebutton.isHidden = true
+        }
     }
 
     @IBAction func photosTapped(_ sender: Any) {
